@@ -1,4 +1,4 @@
-from src.models.sqlite.interfaces.pets_repository_interface import PetsRepositoryInterface
+from src.models.sqlite.interfaces.pets_repository import PetsRepositoryInterface
 from src.models.sqlite.entities.pets import PetsTable
 
 class PetListerController():
