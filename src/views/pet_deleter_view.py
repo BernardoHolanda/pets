@@ -3,7 +3,7 @@ from .http_types.http_request import HttpRequest
 from .http_types.http_response import HttpResponse
 from .interfaces.view_interface import ViewInteface
 
-class PetListerView(ViewInteface):
+class PetDeleterView(ViewInteface):
     def __init__(self, controller: PetDeleterControllerInterface) -> None:
         self.__controller = controller
 

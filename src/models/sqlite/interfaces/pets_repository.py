@@ -8,5 +8,5 @@ class PetsRepositoryInterface(ABC):
         pass
 
     @abstractmethod
-    def delet_pets(self, name: str) -> None:
+    def delete_pets(self, name: str) -> None:
         pass
