@@ -16,7 +16,7 @@ class PeopleRepository(PeopleRepositoryInterface):
                     age=age,
                     pet_id=pet_id
                 )
-                database.add(person_data)
+                database.session.add(person_data)
                 database.session.commit()
             except Exception as exception:
                 database.session.rollback()
@@ -39,6 +39,6 @@ class PeopleRepository(PeopleRepositoryInterface):
                     .one()
                 )
                 return person
-                
+
             except NoResultFound:
                 return None
